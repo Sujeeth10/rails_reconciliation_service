@@ -48,7 +48,7 @@ rails_reconciliation_service/
 
 ⚙️ Setup & Installation
 1️⃣ Clone Repo
-git clone https://github.com/your-username/rails_reconciliation_service.git
+git clone https://github.com/Sujeeth10/rails_reconciliation_service.git
 cd rails_reconciliation_service
 
 2️⃣ Build & Run with Docker
