@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: <%= ENV['DATABASE_HOST'] || 'db' %>
+  username: <%= ENV['DATABASE_USERNAME'] || 'postgres' %>
+  password: <%= ENV['DATABASE_PASSWORD'] || 'password' %>
+  pool: 5
+
+development:
+  <<: *default
+  database: rails_reconciliation_dev
+
+test:
+  <<: *default
+  database: rails_reconciliation_test
+
+production:
+  <<: *default
+  database: rails_reconciliation_prod
